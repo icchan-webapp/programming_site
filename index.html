@@ -1,0 +1,332 @@
+<!-- この度は、本コードを見ていただきありがとうございます。
+ゆっくりと見ていってください！ -->
+
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="このサイトは、大学生でプログラミングを勉強している人同士を繋げるためのマッチングサイトです。">
+
+    <title>大学生のプログラミング仲間を探そう</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/Doctor Reset Css.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/7c725c60d4.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- フェードレイヤー -->
+    <div id="fadeLayer"></div>
+
+    <!-- ヘッダー ----------------->
+    <header class="header">
+        <div class="header_content">
+
+            <h2 class = header_title>プログラミング仲間を探そう</h2>
+
+            <div class = telephone>
+                <p class="p_1">お電話はこちら</p>
+                <p class="p_2">03-1234-5678</p>
+            </div>    
+
+        </div>
+    </header>
+
+    <!-- アラート ------------->
+    <div id="alert">
+        <div id="close_botton"><span></span></div>
+        
+        <div class="alert_title">注意事項</div><br>
+        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+    </div>
+
+    <!-- メイン ----------------->
+    <main class = "main">
+
+        <!-- メインコンテンツ ----------------->
+        <div class="main_content">
+            <!-- セレクトボックス -->
+            <div class="item1">
+                <h2 class="h2">プログラミング言語の種類は？</h2>
+
+                <div class="choice">
+                    <div class="display_selectedItem"></div>
+
+                    <ul class="select_box">
+                        <li>
+                            <div class = "title selected">JavaScript</div>
+                            <div>ユーザー側のWebブラウザと、Webサイトまたはウェブサービスの相互間のやりとりを円滑にする。クライアントサイドでコードを実行する。</div>
+                        </li>
+    
+                        <li>
+                            <div class="title">PHP</div>
+                            <div>HTMLに埋め込むことができるため、Web開発でよく使用される。サーバーサイドでコードを実行する。</div>
+                        </li>
+    
+                        <li>
+                            <div class="title">Ruby</div>
+                            <div>まつもとゆきひろ氏により開発されたオブジェクト指向スクリプト言語である。サーバーサイドでコードを実行する。</div>
+                        </li>
+                        <!-- この文はTechAcademyの公式サイトから引用いたしました。 -->
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div class="item2">
+                <h2 class="h2">集めたい人数は？</h2>
+
+                <div class="choice">
+                    <div class="display_selectedItem"></div>
+                
+                    <ul class="select_box">
+                        <li>1人</li>
+                        <li>2人</li>
+                        <li>3人</li>
+                        <li class="selected">4人</li>
+                        <li>5人</li>
+                        <li>6人</li>
+                        <li>7人</li>
+                        <li>8人</li>
+                        <li>9人</li>
+                        <li>10人</li>
+                    </ul>
+
+                </div>
+            </div>
+            
+            <!-- 検索欄 ----->
+            <form action="" method="post">
+                <div class="item3">
+                    <h2 class="h2">どこで活動しますか？</h2>
+
+                    <input type="search" name="name" class="search">
+                </div>
+            </form>
+
+            <!-- ボタン ----------->
+            <botton type="submit" class="main_content_btn">はじめる</botton>
+
+            <!-- アラートボタン --------->
+            <div class="area_link">
+                <a href="#" id="alert_btn">注意事項</a>
+            </div>
+        </div>
+
+        <!-- メインフォーム ---------->
+        <div class="main_form">
+            <div class="container">
+                <form action="" method="post" class="row">
+                    <div class="col-sm-8 offset-sm-2">
+                        <p>この度は、本サイトをご利用いただきありがとうございます。ご質問がありましたら、以下のフォームにご記入いただき、送信してください。</p>
+        
+                        <div class="form-group">
+                            <label for="name">お名前<span class="badge badge-danger">必須</span></label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="例）山田　太郎" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">メールアドレス<span class="badge badge-danger">必須</span></label>
+                            <input type="email" id="email" name="name" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="grade">学年<span class="badge badge-danger">必須</span></label>
+                            <select id="grade" name="grade" class="form-control" required>
+                                <option value="" hidden>選択してください</option>
+                                <option value="学部１年生">学部１年生</option>
+                                <option value="学部２年生">学部２年生</option>
+                                <option value="学部３年生">学部３年生</option>
+                                <option value="学部４年生">学部４年生</option>
+                                <option value="院１年生">院１年生</option>
+                                <option value="院２年生">院２年生</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>お問い合わせ内容（複数回答可）</label>
+                            <div class="form-check">
+                                <input type="checkbox" name="q1" id="q1_1" value="" class="form-check-input">
+                                <label for="q1_1" class="form-check-label">本サイトの操作方法について</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" name="q1" id="q1_2" value="" class="form-check-input">
+                                <label for="q1_2" class="form-check-label">マッチングの際のトラブルについて</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" name="q1" id="q1_3" value="" class="form-check-input">
+                                <label for="q1_3" class="form-check-label">マッチング後の対応について</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" name="q1" id="q1_4" value="" class="form-check-input">
+                                <label for="q1_4" class="form-check-label">その他</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea name="message" id="message" rows="10" class="form-control" placeholder="こちらに詳しい内容をお書きください"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary px-3 py-2">送信する</button>
+                        
+                    </div>
+                </form>
+            </div>    
+        </div>
+    </main>
+
+    <hr>
+
+    <!-- フッター ----------------->
+    <footer>
+        <div class="footer_contents container">
+            <div class="row">
+                <div class="footer_content col-xl-3">
+                    <p>テキスト</p>
+                    <div class="row">
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div> 
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div> 
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div> 
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div> 
+                    </div>
+                </div>
+
+            <hr>    
+
+                <div class="footer_content col-xl-3">
+                    <p>テキスト
+
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div> 
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div> 
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div> 
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div> 
+                    </div>
+                </div>
+
+                <div class="footer_content col-xl-3">
+                    <p>テキスト
+
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div> 
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div> 
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div> 
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div> 
+                    </div>
+                </div>
+
+                <div class="footer_content col-xl-3">
+                    <p>テキスト
+
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div> 
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div> 
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div> 
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div>
+                        <div class="col-md-4 col-xl-12"><a href="">テキストテキスト</a></div> 
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <div class="sales_contents">
+            <div class="sales_content">
+                <div class="icon">
+                    <i class="fab fa-twitter fa-2x"></i>
+                    <i class="fab fa-facebook-f fa-2x"></i>
+                    <i class="fab fa-instagram fa-2x"></i>
+                </div>
+        
+                <p>&copy; 〇〇 Inc</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
